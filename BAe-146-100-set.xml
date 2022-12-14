@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+	<sim>
+		<fdm>jsb</fdm>
+		<aero>Systems/BAe-146-100-fdm.xml</aero>
+		
+		<model>
+			<!--<path>Aircraft/BAe-146-100-fdm.xml</path>-->
+		</model>
+	</sim>
+</PropertyList>
