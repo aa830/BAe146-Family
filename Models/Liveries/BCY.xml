@@ -7,9 +7,6 @@
           <name type="string">Default</name>
           <texture>Liveries/BCY.png</texture>
         </livery>
-        <floats>
-          <texture>floats.png</texture>
-        </floats>
         <blunt-nose>0</blunt-nose>
         <display-callsign>1</display-callsign>
     </model>
