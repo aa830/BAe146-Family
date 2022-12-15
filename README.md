@@ -4,6 +4,10 @@ The BAe-146 family implemented for FlightGear.
 ## Status
 WIP
 
+##Progress
+Finished v1 of FDM, Aircraft Model present. Need to work on interior.
+
+
 ## Installation
 * Create a separate folder for self-installed aircraft somewhere if you don't have one already
   (/home/user/fgfs-addons/Aircraft for example, the folder MUST be named Aircraft !)
@@ -17,4 +21,4 @@ WIP
 * Use it ! :)
 
 ## Contents
-A basic aircraft model and default livery.
+A basic aircraft model, FDM and default livery.
