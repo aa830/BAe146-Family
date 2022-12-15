@@ -10,7 +10,7 @@ WIP
 * Clone the repo:
   ```sh
   cd /home/user/fgfs-addons/Aircraft
-  git clone https://github.com/aa830/BAe-146-family
+  git clone https://github.com/aa830/BAe146-Family
   ```
 * Add `/home/user/fgfs-addons/Aircraft` to the list of aircraft folders in the Addons tab of the launcher,
   or add `--aircraft-dir=/home/user/fgfs-addons/Aircraft` on the command line.
