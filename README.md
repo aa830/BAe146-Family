@@ -17,4 +17,4 @@ WIP
 * Use it ! :)
 
 ## Contents
-None, right now.
+A basic aircraft model and default livery.
