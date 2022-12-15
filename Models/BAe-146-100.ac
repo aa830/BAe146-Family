@@ -185427,7 +185427,7 @@ name "Bearing"
 data 17
 Object01_1 - Defa
 crease 30.0
-texture "747-400_tire1.png"
+texture "tyre.png"
 numvert 242
 0.39436 -3.53618 1.57503
 0.33022 -3.64728 1.57503
@@ -188537,7 +188537,7 @@ name "Tires"
 data 21
 Object01_1 - Defa.002
 crease 30.0
-texture "747-400_tire1.png"
+texture "tyre.png"
 numvert 396
 0.60313 -3.81894 1.56745
 0.47959 -3.9087 1.56745
@@ -193409,7 +193409,7 @@ name "Bearing.001"
 data 21
 Object01_1 - Defa.001
 crease 30.0
-texture "747-400_tire1.png"
+texture "tyre.png"
 numvert 242
 0.39436 -3.53618 -1.57504
 0.33022 -3.64727 -1.57504
@@ -196516,7 +196516,7 @@ name "Tires.001"
 data 21
 Object01_1 - Defa.003
 crease 30.0
-texture "747-400_tire1.png"
+texture "tyre.png"
 numvert 396
 0.49058 -3.48063 -2.49763
 0.62654 -3.52096 -2.52864
