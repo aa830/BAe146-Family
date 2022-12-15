@@ -5,7 +5,7 @@
 		<aero>Systems/BAe-146-100-fdm.xml</aero>
 		
 		<model>
-			<!--<path>Aircraft/BAe-146-100-fdm.xml</path>-->
+			<!--<path>Aircraft/BAe146-Family/Models/BAe-146-100.xml</path>-->
 		</model>
 	</sim>
 </PropertyList>
