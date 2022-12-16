@@ -4,7 +4,7 @@ The BAe-146 family implemented for FlightGear.
 ## Status
 WIP
 
-##Progress
+## Progress
 Finished v1 of FDM, Aircraft Model present. Need to work on interior.
 
 
@@ -21,4 +21,4 @@ Finished v1 of FDM, Aircraft Model present. Need to work on interior.
 * Use it ! :)
 
 ## Contents
-A basic aircraft model, FDM and default livery.
+* BAe-146-100
