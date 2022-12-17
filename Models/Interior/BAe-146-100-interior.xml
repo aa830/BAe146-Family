@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+    <path>BAe-146-100-interior.ac</path>
+
+    <!-- ## EFFECTS ## -->
+    <!-- TODO: add effects definitions here -->
+
+    
+    <!-- ## INSTRUMENT PANEL ## -->
+    
+    <model>
+        <path>Panel/BAe-146-100-panel.xml</path>
+        <offsets>
+            <x-m> 0.00 </x-m>
+            <y-m> 0.00 </y-m>
+            <z-m> 0.00 </z-m>
+        </offsets>
+    </model-->
+
+    <!-- ############ -->
+    <!--  ANIMATIONS  -->
+    <!-- ############ -->
+
+    <!--
+        TODO: add animations of interior elements here
+        - flaps lever
+        - speedbrake lever
+        - throttles
+        - fuel selector valves
+        - etc..
+    -->
+    
+</PropertyList>
