@@ -9,8 +9,8 @@
        	 	<flight-model>yasim</flight-model>
 		
 		<startup>
-            <splash-logo-image>thumbnail.jpg</splash-logo-image>
-            <splash-texture>Splash/splashscreen.jpg</splash-texture>
+            <splash-logo-image>Pics/thumbnail.jpg</splash-logo-image>
+            <splash-texture>Pics/splashscreen.jpg</splash-texture>
         	</startup>
 		
 		<fdm>jsb</fdm>
