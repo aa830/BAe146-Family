@@ -50,7 +50,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
     
       <!-- Cockpit, with everything included in the flightdeck directed from this file -->
       <model>
-	<path>Aircraft/Jumbolino/Models/Interior/panel/panel.ac</path>
+	<path>BAe146-Family/Models/Interior/panel/panel.ac</path>
 	<offsets>
 	  <x-m>0.0</x-m>
 	  <y-m>0.0</y-m>
@@ -59,7 +59,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
       </model>
 
 	<model>
-		<path>Aircraft/Jumbolino/Models/Interior/Instruments/ai-707/ai1_1.xml</path>
+		<path>BAe146-Family/Models/Interior/Instruments/ai-707/ai1_1.xml</path>
 		<offsets>
 			<x-m>-10.39050</x-m>
 			<y-m>-0.56379</y-m>
@@ -77,7 +77,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 	<!-- ALT pilot side main -->
 	<model>
-		<path>Aircraft/Jumbolino/Models/Interior/Instruments/Altimeter/alt1.xml</path>
+		<path>BAe146-Family/Models/Interior/Instruments/Altimeter/alt1.xml</path>
 		<offsets>
 			<x-m>-10.35650</x-m>
 			<y-m>-0.40379</y-m>
@@ -96,7 +96,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 	<!-- ASI pilot side -->
 
 	<model>
-		<path>Aircraft/Jumbolino/Models/Interior/Instruments/asi-707/asi1.xml</path>
+		<path>BAe146-Family/Models/Interior/Instruments/asi-707/asi1.xml</path>
 		<offsets>
 			<x-m>-10.35650</x-m>
 			<y-m>-0.71379</y-m>
@@ -114,7 +114,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 	<!-- AI first officer side -->
 	<model>
-		<path>Aircraft/Jumbolino/Models/Interior/Instruments/ai-707/ai1_2.xml</path>
+		<path>BAe146-Family/Models/Interior/Instruments/ai-707/ai1_2.xml</path>
 		<offsets>
 			<x-m>-10.39050</x-m>
 			<y-m> 0.47379</y-m>
@@ -132,7 +132,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 	<!-- ALT first officer side -->
 	<model>
-		<path>Aircraft/Jumbolino/Models/Interior/Instruments/Altimeter/alt1.xml</path>
+		<path>BAe146-Family/Models/Interior/Instruments/Altimeter/alt1.xml</path>
 		<offsets>
 			<x-m>-10.35650</x-m>
 			<y-m> 0.64379</y-m>
@@ -151,7 +151,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 	<!-- ASI first officer side -->
 
 	<model>
-		<path>Aircraft/Jumbolino/Models/Interior/Instruments/asi-707/asi2.xml</path>
+		<path>BAe146-Family/Models/Interior/Instruments/asi-707/asi2.xml</path>
 		<offsets>
 			<x-m>-10.35650</x-m>
 			<y-m> 0.32679</y-m>
