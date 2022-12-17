@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+    <path>BAe-146-100-panel.ac</path>
+
+    <!-- 
+        TODO:
+        - place all instruments on panel 
+        - add lighting effects (material animations)
+        - add animations specific to panel items, like switches, circuit-breakers, master ignition key etc.
+
+
+        - animations specific to instruments are defined within instruments' xml files.
+    -->
+
+</PropertyList>

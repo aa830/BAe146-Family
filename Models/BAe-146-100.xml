@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+    <path>BAe-146-100.ac</path>
+
+    <!-- ## Nasal code for Multi-Player ## -->
+    <nasal>
+        <load>
+            <![CDATA[
+                print("TODO: implement on-load Nasal code for MP");
+            ]]>
+        </load>
+        <unload>
+            <![CDATA[
+                print("TODO: implement on-unload Nasal code for MP");
+            ]]>
+        </unload>
+    </nasal>
+
+    <!-- ## EFFECTS ## -->
+    <!-- TODO: add effects definitions here -->
+
+    
+    <!-- ## INTERIOR ## -->
+    
+    <model>
+        <usage>interior</usage>
+        <path>Interior/BAe-146-100-interior.xml</path>
+    </model>
+
+    <!-- ############ -->
+    <!--  ANIMATIONS  -->
+    <!-- ############ -->
+
+    <!-- 
+        TODO:
+        - animate control surfaces
+        - livery changes
+        - doors
+        - wheel wells
+        - landing gear
+        - etc.
+    -->
+
+    <!-- ## LIGHTS ## -->
+    <!--model>
+        <name>lights</lights>
+        <path>lights.xml</lights>
+    </model-->
+
+</PropertyList>
