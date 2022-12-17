@@ -2,7 +2,7 @@
 <PropertyList>
 	<sim>
 		<description>BAe 146</description>
-       		<long-description>The British Aerospace 146 (BAe 146) is a 7-112 seat, four turbine engined, high wing aircraft with a retractable tricycle gear. Originally developed by British Aerospace, Avro later produced and distributed the Avro RJ series. Since it's first flight in 1981 there were built more then 390 have been built and the aircraft still enjoys great popularity due to it's quietness and it's robustness and versatility.vThis version for FlightGear is the BAe 146-100 series with Lycoming ALF 502 engines. Have fun!
+       		<long-description>The British Aerospace 146 (BAe 146) is a 70-112 seat, four turbine engined, high wing aircraft with a retractable tricycle gear. Originally developed by British Aerospace, Avro later produced and distributed the Avro RJ series. Since it's first flight in 1981 there were built more then 390 have been built and the aircraft still enjoys great popularity due to it's quietness and it's robustness and versatility.vThis version for FlightGear is the BAe 146-100 series with Lycoming ALF 502 engines. Have fun!
         	</long-description>
         
         	<author>RenanMsV (Initial model), MariuszXC (3D, Textures), Aarav Darbari (FDM, Systems, Sounds), TheFGFSEagle (3D, Nasal, Systems, misc)</author>
