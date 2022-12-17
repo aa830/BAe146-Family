@@ -1,0 +1,534 @@
+<?xml version="1.0"?>
+<!--
+BAe-146-200 Jumbolino for Flightgear Flight Simulator
+Panel Instrumentation
+
+:copyright: 2015 Peter Brendt (JWocky)
+:copyright: 2015 Israel Hernandez (IAHM-COL)
+:copyright: 2015 Jonathan (legoboyvdlp)
+License: GPL2 or later. See ./COPYING
+Some Instruments are taken from the 707 for Fligthgear by M. Kraus 2013
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+-->
+
+<PropertyList>
+	<!-- 
+	Top instrument is a template to exemplify addition of more instruments
+	It is recommended to follow that standard, including/copying/modifying the
+	content to the directory ./Models/Interior/Instruments, then
+	linking here, and adjusting offset to a proper location 
+	   
+	z= up/down
+	y= left/right
+	x= back/front 
+	-->
+
+	<!-- model>
+		<name>ai</name>
+		<path>Aircraft/Jumbolino/Models/Interior/Instruments/ai/ai.xml</path>
+		<offsets>
+			<x-m>-19.15649</x-m>
+			<y-m>-1.77379</y-m>
+			<z-m>-3.90616</z-m>
+		</offsets>
+	</model -->
+
+	<!-- AI pilot side main -->
+    
+      <!-- Cockpit, with everything included in the flightdeck directed from this file -->
+      <model>
+	<path>Aircraft/Jumbolino/Models/Interior/panel/panel.ac</path>
+	<offsets>
+	  <x-m>0.0</x-m>
+	  <y-m>0.0</y-m>
+	  <z-m>0.0</z-m>
+	</offsets>
+      </model>
+
+	<model>
+		<path>Aircraft/Jumbolino/Models/Interior/Instruments/ai-707/ai1_1.xml</path>
+		<offsets>
+			<x-m>-10.39050</x-m>
+			<y-m>-0.56379</y-m>
+			<z-m>-1.78616</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>ai1_1</object-name>>
+		<type>scale</type>
+		<x-offset>1.25</x-offset>
+		<y-offset>1.25</y-offset>
+		<z-offset>1.25</z-offset>
+	</animation>
+
+	<!-- ALT pilot side main -->
+	<model>
+		<path>Aircraft/Jumbolino/Models/Interior/Instruments/Altimeter/alt1.xml</path>
+		<offsets>
+			<x-m>-10.35650</x-m>
+			<y-m>-0.40379</y-m>
+			<z-m>-1.79616</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>alt1</object-name>>
+		<type>scale</type>
+		<x-offset>1.25</x-offset>
+		<y-offset>1.25</y-offset>
+		<z-offset>1.25</z-offset>
+	</animation>
+
+	<!-- ASI pilot side -->
+
+	<model>
+		<path>Aircraft/Jumbolino/Models/Interior/Instruments/asi-707/asi1.xml</path>
+		<offsets>
+			<x-m>-10.35650</x-m>
+			<y-m>-0.71379</y-m>
+			<z-m>-1.80616</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>asi1</object-name>>
+		<type>scale</type>
+		<x-offset>1.25</x-offset>
+		<y-offset>1.25</y-offset>
+		<z-offset>1.25</z-offset>
+	</animation>
+
+	<!-- AI first officer side -->
+	<model>
+		<path>Aircraft/Jumbolino/Models/Interior/Instruments/ai-707/ai1_2.xml</path>
+		<offsets>
+			<x-m>-10.39050</x-m>
+			<y-m> 0.47379</y-m>
+			<z-m>-1.78616</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>ai1_2</object-name>>
+		<type>scale</type>
+		<x-offset>1.25</x-offset>
+		<y-offset>1.25</y-offset>
+		<z-offset>1.25</z-offset>
+	</animation>
+
+	<!-- ALT first officer side -->
+	<model>
+		<path>Aircraft/Jumbolino/Models/Interior/Instruments/Altimeter/alt1.xml</path>
+		<offsets>
+			<x-m>-10.35650</x-m>
+			<y-m> 0.64379</y-m>
+			<z-m>-1.79616</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>alt1</object-name>>
+		<type>scale</type>
+		<x-offset>1.25</x-offset>
+		<y-offset>1.25</y-offset>
+		<z-offset>1.25</z-offset>
+	</animation>
+
+	<!-- ASI first officer side -->
+
+	<model>
+		<path>Aircraft/Jumbolino/Models/Interior/Instruments/asi-707/asi2.xml</path>
+		<offsets>
+			<x-m>-10.35650</x-m>
+			<y-m> 0.32679</y-m>
+			<z-m>-1.79616</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>asi2</object-name>>
+		<type>scale</type>
+		<x-offset>1.25</x-offset>
+		<y-offset>1.25</y-offset>
+		<z-offset>1.25</z-offset>
+	</animation>
+
+	<!-- EPR1 -->
+	<model>
+		<path>Aircraft/JPack/Voodoomaster/Models/Instruments/Engines/epr_1.xml</path>
+		<offsets>
+			<x-m>-10.35650</x-m>
+			<y-m>-0.23579</y-m>
+			<z-m>-1.72016</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>epr1</object-name>>
+		<type>scale</type>
+		<x-offset>1.5</x-offset>
+		<y-offset>1.5</y-offset>
+		<z-offset>1.5</z-offset>
+	</animation>
+
+	<!--
+		Intruments pulled from JPack/Voodoomaster, that saves us from copying the same instruments in every plane
+	-->
+
+	<!-- EPR2 -->
+	<model>
+		<path>Aircraft/JPack/Voodoomaster/Models/Instruments/Engines/epr_2.xml</path>
+		<offsets>
+			<x-m>-10.35650</x-m>
+			<y-m>-0.17679</y-m>
+			<z-m>-1.72016</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>epr2</object-name>>
+		<type>scale</type>
+		<x-offset>1.5</x-offset>
+		<y-offset>1.5</y-offset>
+		<z-offset>1.5</z-offset>
+	</animation>
+
+	<!-- EPR3 -->
+	<model>
+		<path>Aircraft/JPack/Voodoomaster/Models/Instruments/Engines/epr_3.xml</path>
+		<offsets>
+			<x-m>-10.35650</x-m>
+			<y-m>-0.11579</y-m>
+			<z-m>-1.72016</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>epr3</object-name>>
+		<type>scale</type>
+		<x-offset>1.5</x-offset>
+		<y-offset>1.5</y-offset>
+		<z-offset>1.5</z-offset>
+	</animation>
+
+	<!-- EPR4 -->
+	<model>
+		<path>Aircraft/JPack/Voodoomaster/Models/Instruments/Engines/epr_4.xml</path>
+		<offsets>
+			<x-m>-10.35650</x-m>
+			<y-m>-0.05679</y-m>
+			<z-m>-1.72016</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>epr4</object-name>>
+		<type>scale</type>
+		<x-offset>1.5</x-offset>
+		<y-offset>1.5</y-offset>
+		<z-offset>1.5</z-offset>
+	</animation>
+
+	<!-- N1_1 -->
+	<model>
+		<path>Aircraft/JPack/Voodoomaster/Models/Instruments/Engines/n1_1.xml</path>
+		<offsets>
+			<x-m>-10.35650</x-m>
+			<y-m>-0.23579</y-m>
+			<z-m>-1.78516</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>n1_1</object-name>>
+		<type>scale</type>
+		<x-offset>1.4</x-offset>
+		<y-offset>1.4</y-offset>
+		<z-offset>1.4</z-offset>
+	</animation>
+
+	<!-- N1_2 -->
+	<model>
+		<path>Aircraft/JPack/Voodoomaster/Models/Instruments/Engines/n1_2.xml</path>
+		<offsets>
+			<x-m>-10.35650</x-m>
+			<y-m>-0.17679</y-m>
+			<z-m>-1.78516</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>n1_2</object-name>>
+		<type>scale</type>
+		<x-offset>1.4</x-offset>
+		<y-offset>1.4</y-offset>
+		<z-offset>1.4</z-offset>
+	</animation>
+
+	<!-- N1_3 -->
+	<model>
+		<path>Aircraft/JPack/Voodoomaster/Models/Instruments/Engines/n1_3.xml</path>
+		<offsets>
+			<x-m>-10.35650</x-m>
+			<y-m>-0.11579</y-m>
+			<z-m>-1.78516</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>n1_3</object-name>>
+		<type>scale</type>
+		<x-offset>1.4</x-offset>
+		<y-offset>1.4</y-offset>
+		<z-offset>1.4</z-offset>
+	</animation>
+
+	<!-- N1_4 -->
+	<model>
+		<path>Aircraft/JPack/Voodoomaster/Models/Instruments/Engines/n1_4.xml</path>
+		<offsets>
+			<x-m>-10.35650</x-m>
+			<y-m>-0.05679</y-m>
+			<z-m>-1.78516</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>n1_4</object-name>>
+		<type>scale</type>
+		<x-offset>1.4</x-offset>
+		<y-offset>1.4</y-offset>
+		<z-offset>1.4</z-offset>
+	</animation>
+
+	<!-- N2_1 -->
+	<model>
+		<path>Aircraft/JPack/Voodoomaster/Models/Instruments/Engines/n2_1.xml</path>
+		<offsets>
+			<x-m>-10.35650</x-m>
+			<y-m>-0.23579</y-m>
+			<z-m>-1.85016</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>n2_1</object-name>>
+		<type>scale</type>
+		<x-offset>1.4</x-offset>
+		<y-offset>1.4</y-offset>
+		<z-offset>1.4</z-offset>
+	</animation>
+
+	<!-- N2_2 -->
+	<model>
+		<path>Aircraft/JPack/Voodoomaster/Models/Instruments/Engines/n2_2.xml</path>
+		<offsets>
+			<x-m>-10.35650</x-m>
+			<y-m>-0.17679</y-m>
+			<z-m>-1.85016</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>n2_2</object-name>>
+		<type>scale</type>
+		<x-offset>1.4</x-offset>
+		<y-offset>1.4</y-offset>
+		<z-offset>1.4</z-offset>
+	</animation>
+
+	<!-- N2_3 -->
+	<model>
+		<path>Aircraft/JPack/Voodoomaster/Models/Instruments/Engines/n2_3.xml</path>
+		<offsets>
+			<x-m>-10.35650</x-m>
+			<y-m>-0.11579</y-m>
+			<z-m>-1.85016</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>n2_3</object-name>>
+		<type>scale</type>
+		<x-offset>1.4</x-offset>
+		<y-offset>1.4</y-offset>
+		<z-offset>1.4</z-offset>
+	</animation>
+
+	<!-- N2_4 -->
+	<model>
+		<path>Aircraft/JPack/Voodoomaster/Models/Instruments/Engines/n2_4.xml</path>
+		<offsets>
+			<x-m>-10.35650</x-m>
+			<y-m>-0.05679</y-m>
+			<z-m>-1.85016</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>n2_4</object-name>>
+		<type>scale</type>
+		<x-offset>1.4</x-offset>
+		<y-offset>1.4</y-offset>
+		<z-offset>1.4</z-offset>
+	</animation>
+
+	<!-- EXH1 -->
+	<model>
+		<path>Aircraft/JPack/Voodoomaster/Models/Instruments/Engines/exh_1.xml</path>
+		<offsets>
+			<x-m>-10.35650</x-m>
+			<y-m>-0.23579</y-m>
+			<z-m>-1.91516</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>exh1</object-name>>
+		<type>scale</type>
+		<x-offset>1.4</x-offset>
+		<y-offset>1.4</y-offset>
+		<z-offset>1.4</z-offset>
+	</animation>
+
+	<!-- EXH2 -->
+	<model>
+		<path>Aircraft/JPack/Voodoomaster/Models/Instruments/Engines/exh_2.xml</path>
+		<offsets>
+			<x-m>-10.35650</x-m>
+			<y-m>-0.17679</y-m>
+			<z-m>-1.91516</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>exh2</object-name>>
+		<type>scale</type>
+		<x-offset>1.4</x-offset>
+		<y-offset>1.4</y-offset>
+		<z-offset>1.4</z-offset>
+	</animation>
+
+	<!-- EXH3 -->
+	<model>
+		<path>Aircraft/JPack/Voodoomaster/Models/Instruments/Engines/exh_3.xml</path>
+		<offsets>
+			<x-m>-10.35650</x-m>
+			<y-m>-0.11579</y-m>
+			<z-m>-1.91516</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>exh3</object-name>>
+		<type>scale</type>
+		<x-offset>1.4</x-offset>
+		<y-offset>1.4</y-offset>
+		<z-offset>1.4</z-offset>
+	</animation>
+
+	<!-- EXH4 -->
+	<model>
+		<path>Aircraft/JPack/Voodoomaster/Models/Instruments/Engines/exh_4.xml</path>
+		<offsets>
+			<x-m>-10.35650</x-m>
+			<y-m>-0.05679</y-m>
+			<z-m>-1.91516</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>exh4</object-name>>
+		<type>scale</type>
+		<x-offset>1.4</x-offset>
+		<y-offset>1.4</y-offset>
+		<z-offset>1.4</z-offset>
+	</animation>
+
+	<!-- FFKGH1 -->
+	<model>
+		<path>Aircraft/JPack/Voodoomaster/Models/Instruments/Engines/ffkgh_1.xml</path>
+		<offsets>
+			<x-m>-10.35650</x-m>
+			<y-m>-0.23579</y-m>
+			<z-m>-1.98016</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>ffkgh_1</object-name>>
+		<type>scale</type>
+		<x-offset>1.4</x-offset>
+		<y-offset>1.4</y-offset>
+		<z-offset>1.4</z-offset>
+	</animation>
+
+	<!-- FFKGH2 -->
+	<model>
+		<path>Aircraft/JPack/Voodoomaster/Models/Instruments/Engines/ffkgh_2.xml</path>
+		<offsets>
+			<x-m>-10.35650</x-m>
+			<y-m>-0.17679</y-m>
+			<z-m>-1.98016</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>ffkgh_2</object-name>>
+		<type>scale</type>
+		<x-offset>1.4</x-offset>
+		<y-offset>1.4</y-offset>
+		<z-offset>1.4</z-offset>
+	</animation>
+
+	<!-- FFKG3 -->
+	<model>
+		<path>Aircraft/JPack/Voodoomaster/Models/Instruments/Engines/ffkgh_3.xml</path>
+		<offsets>
+			<x-m>-10.35650</x-m>
+			<y-m>-0.11579</y-m>
+			<z-m>-1.98016</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>ffkgh_3</object-name>>
+		<type>scale</type>
+		<x-offset>1.4</x-offset>
+		<y-offset>1.4</y-offset>
+		<z-offset>1.4</z-offset>
+	</animation>
+
+	<!-- FFKGH4 -->
+	<model>
+		<path>Aircraft/JPack/Voodoomaster/Models/Instruments/Engines/ffkgh_4.xml</path>
+		<offsets>
+			<x-m>-10.35650</x-m>
+			<y-m>-0.05679</y-m>
+			<z-m>-1.98016</z-m>
+		</offsets>
+	</model>
+	
+	<animation>
+		<object-name>ffkgh_4</object-name>>
+		<type>scale</type>
+		<x-offset>1.4</x-offset>
+		<y-offset>1.4</y-offset>
+		<z-offset>1.4</z-offset>
+	</animation>
+
+</PropertyList>
