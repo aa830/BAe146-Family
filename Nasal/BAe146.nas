@@ -1,9 +1,9 @@
 #####################################################################################################
-# Jumbolino Systems                                                                                 #
+# BAe146 Systems                                                                                 #
 # Original by Syd Adams and Liam Gathercole, rewritten by Peter Brendt                              #
 #####################################################################################################
 
-aircraft.livery.init("Aircraft/Jumbolino/Models/Liveries");
+aircraft.livery.init("/Models/Liveries");
 
 var SndOut = props.globals.getNode("/sim/sound/Ovolume",1);
 var FHmeter = aircraft.timer.new("/instrumentation/clock/flight-meter-sec", 10).stop();
