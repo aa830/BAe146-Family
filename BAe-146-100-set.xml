@@ -8,6 +8,11 @@
         	<author>RenanMsV (Initial model), MariuszXC (3D, Textures), Aarav Darbari (FDM, Systems, Sounds), TheFGFSEagle (3D, Nasal, Systems, misc)</author>
        	 	<flight-model>yasim</flight-model>
 		
+		<startup>
+            <splash-logo-image>thumbnail.png</splash-logo-image>
+            <splash-texture>Splash/splashscreen.png</splash-texture>
+        	</startup>
+		
 		<fdm>jsb</fdm>
 		<aero>Systems/BAe-146-100-fdm.xml</aero>
 		
