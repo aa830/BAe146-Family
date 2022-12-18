@@ -21,5 +21,7 @@
 		<model>
 			<path>Aircraft/BAe146-Family/Models/BAe-146-100.xml</path>
 		</model>
+		
+		<menubar include="gui/menu.xml"/>
 	</sim>
 </PropertyList>
