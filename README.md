@@ -1,6 +1,8 @@
 # BAe-146 family
 The BAe-146 family implemented for FlightGear.
 
+![](./Pics/splashscreen.jpg?raw=true)
+
 ## Status
 WIP
 
