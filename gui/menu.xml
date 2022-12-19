@@ -1,29 +1,13 @@
-
-
 <?xml version="1.0" encoding="UTF-8"?>
-
-<!-- Aircraft-specific menu for the BAe 146 -->
-
 <PropertyList>
-
     <default>
-
         <menu n="10">
-
             <label>BAe 146</label>
-
             <enabled type="bool">true</enabled>
 
             <item>
                 <label>Autostart</label>
-                
                 <binding>
-                    <condition>
-                        <equals>
-                            <property>sim/flight-model</property>
-                            <value>jsb</value>
-                        </equals>
-                    </condition>
                     <command>property-toggle</command>
                     <property>sim/model/autostart-jsb</property>
                 </binding>
@@ -38,23 +22,12 @@
             </item>
 
             <item>
-                <label>---Ground Services---</label>
-                <enabled>false</enabled>
-            </item>
-
-            <item>
                 <label>Fuel truck</label>
                 <binding>
                     <command>nasal</command>
                     <script>fgcommand("dialog-show", props.Node.new({"dialog-name": "fuel-truck"}));</script>
                 </binding>
             </item>
-
-            <item>
-                <label>-----------------</label>
-                <enabled>false</enabled>
-            </item>
-
 
             <item>
                 <label>Select Livery</label>
@@ -71,9 +44,6 @@
                     <dialog-name>Bae146-about</dialog-name>
                 </binding>
             </item>
-
         </menu>
-
     </default>
-
 </PropertyList>
