@@ -15,7 +15,7 @@
 		</previews>
 		
 		<flight-model>jsb</flight-model>
-		<aero>Systems/BAe-146-100-fdm.xml</aero>
+		<aero>Systems/BAe-146-100-fdm</aero>
 		
 		<model>
 			<path>Aircraft/BAe146-Family/Models/BAe-146-100.xml</path>
