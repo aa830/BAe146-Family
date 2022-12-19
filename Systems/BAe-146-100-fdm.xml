@@ -189,7 +189,7 @@
     </thruster>
   </engine>
 
-   <engine file="BAe 146/Avro RJ_engine">
+   <engine file="Engines/Avro RJ_engine">
     <location unit="IN">
       <x> 1514.88 </x>
       <y> -20.00 </y>
@@ -215,7 +215,7 @@
     </thruster>
   </engine>
 
-   <engine file="BAe 146/Avro RJ_engine">
+   <engine file="Engines/Avro RJ_engine">
     <location unit="IN">
       <x> 1514.88 </x>
       <y>  20.00 </y>
@@ -241,7 +241,7 @@
     </thruster>
   </engine>
 
-   <engine file="BAe 146/Avro RJ_engine">
+   <engine file="Engines/Avro RJ_engine">
     <location unit="IN">
       <x> 1514.88 </x>
       <y>  60.00 </y>
