@@ -1,1006 +1,1002 @@
-
-
 <?xml version="1.0"?>
 
 <PropertyList>
 
 	<fx>
 
-<!-- Engine External Sounds -->
+		<!-- Engine External Sounds -->
 
-<!-- APU -->
-
-		<engine>
-   <name>APU</name>
-   		<path>Sounds/apu/apu_inside.wav</path>
-   		<mode>once</mode>
-	<condition>
-		<not>
-	<property>sim/current-view/internal</property>
-		</not>
-        <property>/controls/electric/APU-generator</property>
-	</condition>  
-		<position>
-			<x>0</x>
-			<y>0</y>
-			<z>0</z>
-		</position>      
-   	  <volume>
-        <property>engines/engine/n1</property>
-        <factor> 0.09 </factor>
-        <min> 0.0 </min>
-        <max> 0.4 </max>
-      </volume>
-      <pitch>
-        <property>engines/engine/n1</property>
-        <factor> 0.01 </factor>
-        <min> 0.0 </min>
-        <max> 1.0 </max>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </engine>
-
-
-<!-- Engines Starting -->
-	
-		<engine>
-   <name>engine1-starting</name>
-   		<path>ounds/Engine/eng2.wav</path>
-   		<mode>looped</mode>
-	<condition>
-		<not>
-	<property>sim/current-view/internal</property>
-		</not>
-        <property>/controls/engines/engine/starter</property>	
-	</condition>  
-		<position>
-			<x>0.33175</x>
-			<y>-6.65874</y>
-			<z>-0.00211</z>
-		</position>      
-            <orientation>
-                <x>-1</x>
-                <y>0</y>
-                <z>0</z>
-                <inner-angle>75</inner-angle>
-                <outer-angle>220</outer-angle>
-                <outer-gain>0.3</outer-gain>
-         </orientation>
-   	  <volume>
-        <property>engines/engine/n1</property>
-        <factor> 0.09 </factor>
-        <min> 0.01 </min>
-        <max> 0.4 </max>
-      </volume>
-      <pitch>
-        <property>engines/engine/n1</property>
-        <factor> 0.01 </factor>
-        <min> 0.0 </min>
-        <max> 1.0 </max>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </engine>
+		<!-- APU -->
 
 		<engine>
-   <name>engine2-starting</name>
-   		<path>ounds/Engine/eng2.wav</path>
-   		<mode>looped</mode>
-	<condition>
-		<not>
-	<property>sim/current-view/internal</property>
-		</not>
-       <property>/controls/engines/engine[1]/starter</property>
-	</condition>      
-		<position>
-			<x>-0.32961</x>
-			<y>-4.20425</y>
-			<z>0.06401</z>
-		</position>      
-            <orientation>
-                <x>-1</x>
-                <y>0</y>
-                <z>0</z>
-                <inner-angle>75</inner-angle>
-                <outer-angle>220</outer-angle>
-                <outer-gain>0.3</outer-gain>
-         </orientation>
-   	  <volume>
-        <property>engines/engine[1]/n1</property>
-        <factor> 0.09 </factor>
-        <min> 0.01 </min>
-        <max> 0.4 </max>
-      </volume>
-      <pitch>
-        <property>engines/engine[1]/n1</property>
-        <factor> 0.01 </factor>
-        <min> 0.0 </min>
-        <max> 1.0 </max>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </engine>
+			<name>APU</name>
+			<path>Sounds/apu/apu_inside.wav</path>
+			<mode>once</mode>
+			<condition>
+				<not>
+					<property>sim/current-view/internal</property>
+				</not>
+				<property>/controls/electric/APU-generator</property>
+			</condition>
+			<position>
+				<x>0</x>
+				<y>0</y>
+				<z>0</z>
+			</position>
+			<volume>
+				<property>engines/engine/n1</property>
+				<factor> 0.09 </factor>
+				<min> 0.0 </min>
+				<max> 0.4 </max>
+			</volume>
+			<pitch>
+				<property>engines/engine/n1</property>
+				<factor> 0.01 </factor>
+				<min> 0.0 </min>
+				<max> 1.0 </max>
+			</pitch>
+			<reference-dist>100</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
+
+
+		<!-- Engines Starting -->
 
 		<engine>
-   <name>engine3-starting</name>
-   		<path>ounds/Engine/eng2.wav</path>
-   		<mode>looped</mode>
-	<condition>
-		<not>
-	<property>sim/current-view/internal</property>
-		</not>
-        <property>/controls/engines/engine[2]/starter</property>	
-	</condition>      
-		<position>
-			<x>-0.33182</x>
-			<y>4.18267</y>
-			<z>-0.06911</z>
-		</position>      
-            <orientation>
-                <x>-1</x>
-                <y>0</y>
-                <z>0</z>
-                <inner-angle>75</inner-angle>
-                <outer-angle>220</outer-angle>
-                <outer-gain>0.3</outer-gain>
-           </orientation>
-   	  <volume>
-        <property>engines/engine[2]/n1</property>
-        <factor> 0.09 </factor>
-        <min> 0.01 </min>
-        <max> 0.4 </max>
-      </volume>
-      <pitch>
-        <property>engines/engine[2]/n1</property>
-        <factor> 0.01 </factor>
-        <min> 0.0 </min>
-        <max> 1.0 </max>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </engine>
+			<name>engine1-starting</name>
+			<path>ounds/Engine/eng2.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<not>
+					<property>sim/current-view/internal</property>
+				</not>
+				<property>/controls/engines/engine/starter</property>
+			</condition>
+			<position>
+				<x>0.33175</x>
+				<y>-6.65874</y>
+				<z>-0.00211</z>
+			</position>
+			<orientation>
+				<x>-1</x>
+				<y>0</y>
+				<z>0</z>
+				<inner-angle>75</inner-angle>
+				<outer-angle>220</outer-angle>
+				<outer-gain>0.3</outer-gain>
+			</orientation>
+			<volume>
+				<property>engines/engine/n1</property>
+				<factor> 0.09 </factor>
+				<min> 0.01 </min>
+				<max> 0.4 </max>
+			</volume>
+			<pitch>
+				<property>engines/engine/n1</property>
+				<factor> 0.01 </factor>
+				<min> 0.0 </min>
+				<max> 1.0 </max>
+			</pitch>
+			<reference-dist>100</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
 
 		<engine>
-   <name>engine4-starting</name>
-   		<path>Sounds/Engine/eng2.wav<path>
-   		<mode>looped</mode>
-	<condition>
-		<not>
-	<property>sim/current-view/internal</property>
-		</not>
-        <property>/controls/engines/engine[3]/starter</property>
-	</condition>      
-		<position>
-			<x>0.33065</x>
-			<y>6.66262</y>
-			<z>-0.00211</z>
-		</position>      
-            <orientation>
-                <x>-1</x>
-                <y>0</y>
-                <z>0</z>
-                <inner-angle>75</inner-angle>
-                <outer-angle>220</outer-angle>
-                <outer-gain>0.3</outer-gain>
-           </orientation>
-   	  <volume>
-        <property>engines/engine[3]/n1</property>
-        <factor> 0.09 </factor>
-        <min> 0.01 </min>
-        <max> 0.4 </max>
-      </volume>
-      <pitch>
-        <property>engines/engine[3]/n1</property>
-        <factor> 0.01 </factor>
-        <min> 0.0 </min>
-        <max> 1.0 </max>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </engine>
-
-
-<!-- Engines Whine -->
+			<name>engine2-starting</name>
+			<path>ounds/Engine/eng2.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<not>
+					<property>sim/current-view/internal</property>
+				</not>
+				<property>/controls/engines/engine[1]/starter</property>
+			</condition>
+			<position>
+				<x>-0.32961</x>
+				<y>-4.20425</y>
+				<z>0.06401</z>
+			</position>
+			<orientation>
+				<x>-1</x>
+				<y>0</y>
+				<z>0</z>
+				<inner-angle>75</inner-angle>
+				<outer-angle>220</outer-angle>
+				<outer-gain>0.3</outer-gain>
+			</orientation>
+			<volume>
+				<property>engines/engine[1]/n1</property>
+				<factor> 0.09 </factor>
+				<min> 0.01 </min>
+				<max> 0.4 </max>
+			</volume>
+			<pitch>
+				<property>engines/engine[1]/n1</property>
+				<factor> 0.01 </factor>
+				<min> 0.0 </min>
+				<max> 1.0 </max>
+			</pitch>
+			<reference-dist>100</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
 
 		<engine>
-   <name>engine1-running</name>
-   		<path>Sounds/Engine/eng.wav</path>
-   		<mode>looped</mode>
-	<condition>
-		<not>
-	<property>sim/current-view/internal</property>
-		</not>
-        <property>/engines/engine/n2</property>
-	</condition>      
-		<position>
-			<x>0.33175</x>
-			<y>-6.65874</y>
-			<z>-0.00211</z>
-		</position>
-      <volume>
-        <property>engines/engine/n1</property>
-        <factor> 0.09 </factor>
-        <min> 0.01 </min>
-        <max> 0.3 </max>
-      </volume>
-            <orientation>
-                <x>-1</x>
-                <y>0</y>
-                <z>0</z>
-                <inner-angle>75</inner-angle>
-                <outer-angle>220</outer-angle>
-                <outer-gain>0.3</outer-gain>
-         </orientation>
-      <pitch>
-        <property>engines/engine/n1</property>
-        <factor> 0.01 </factor>
-        <min> 0.0 </min>
-        <max> 1.0 </max>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </engine>
-		
+			<name>engine3-starting</name>
+			<path>ounds/Engine/eng2.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<not>
+					<property>sim/current-view/internal</property>
+				</not>
+				<property>/controls/engines/engine[2]/starter</property>
+			</condition>
+			<position>
+				<x>-0.33182</x>
+				<y>4.18267</y>
+				<z>-0.06911</z>
+			</position>
+			<orientation>
+				<x>-1</x>
+				<y>0</y>
+				<z>0</z>
+				<inner-angle>75</inner-angle>
+				<outer-angle>220</outer-angle>
+				<outer-gain>0.3</outer-gain>
+			</orientation>
+			<volume>
+				<property>engines/engine[2]/n1</property>
+				<factor> 0.09 </factor>
+				<min> 0.01 </min>
+				<max> 0.4 </max>
+			</volume>
+			<pitch>
+				<property>engines/engine[2]/n1</property>
+				<factor> 0.01 </factor>
+				<min> 0.0 </min>
+				<max> 1.0 </max>
+			</pitch>
+			<reference-dist>100</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
 
 		<engine>
-   <name>engine2-running</name>
-   		<path>Sounds/Engine/eng.wav</path>
-   		<mode>looped</mode>
-	<condition>
-		<not>
-	<property>sim/current-view/internal</property>
-		</not>
-        <property>/engines/engine[1]/n1</property>
-	</condition>      
-		<position>
-			<x>-0.32961</x>
-			<y>-4.20425</y>
-			<z>0.06401</z>
-		</position>
-      <volume>
-        <property>engines/engine[1]/n1</property>
-        <factor> 0.09 </factor>
-        <min> 0.01 </min>
-        <max> 0.3 </max>
-      </volume>
-            <orientation>
-                <x>-1</x>
-                <y>0</y>
-                <z>0</z>
-                <inner-angle>75</inner-angle>
-                <outer-angle>220</outer-angle>
-                <outer-gain>0.3</outer-gain>
-         </orientation>
-      <pitch>
-        <property>engines/engine[1]/n1</property>
-        <factor> 0.01 </factor>
-        <min> 0.0 </min>
-        <max> 1.0 </max>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </engine>
-		
+			<name>engine4-starting</name>
+			<path>Sounds/Engine/eng2.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<not>
+					<property>sim/current-view/internal</property>
+				</not>
+				<property>/controls/engines/engine[3]/starter</property>
+			</condition>
+			<position>
+				<x>0.33065</x>
+				<y>6.66262</y>
+				<z>-0.00211</z>
+			</position>
+			<orientation>
+				<x>-1</x>
+				<y>0</y>
+				<z>0</z>
+				<inner-angle>75</inner-angle>
+				<outer-angle>220</outer-angle>
+				<outer-gain>0.3</outer-gain>
+			</orientation>
+			<volume>
+				<property>engines/engine[3]/n1</property>
+				<factor> 0.09 </factor>
+				<min> 0.01 </min>
+				<max> 0.4 </max>
+			</volume>
+			<pitch>
+				<property>engines/engine[3]/n1</property>
+				<factor> 0.01 </factor>
+				<min> 0.0 </min>
+				<max> 1.0 </max>
+			</pitch>
+			<reference-dist>100</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
+
+
+		<!-- Engines Whine -->
+
+		<engine>
+			<name>engine1-running</name>
+			<path>Sounds/Engine/eng.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<not>
+					<property>sim/current-view/internal</property>
+				</not>
+				<property>/engines/engine/n2</property>
+			</condition>
+			<position>
+				<x>0.33175</x>
+				<y>-6.65874</y>
+				<z>-0.00211</z>
+			</position>
+			<volume>
+				<property>engines/engine/n1</property>
+				<factor> 0.09 </factor>
+				<min> 0.01 </min>
+				<max> 0.3 </max>
+			</volume>
+			<orientation>
+				<x>-1</x>
+				<y>0</y>
+				<z>0</z>
+				<inner-angle>75</inner-angle>
+				<outer-angle>220</outer-angle>
+				<outer-gain>0.3</outer-gain>
+			</orientation>
+			<pitch>
+				<property>engines/engine/n1</property>
+				<factor> 0.01 </factor>
+				<min> 0.0 </min>
+				<max> 1.0 </max>
+			</pitch>
+			<reference-dist>100</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
 
 
 		<engine>
-   <name>engine3-running</name>
-   		<path>Sounds/Engine/eng.wav</path>
-   		<mode>looped</mode>
-	<condition>
-		<not>
-	<property>sim/current-view/internal</property>
-		</not>
-        <property>/engines/engine[2]/n1</property>
-	</condition>
-		<position>
-			<x>-0.33182</x>
-			<y>4.18267</y>
-			<z>-0.06911</z>
-		</position>
-      <volume>
-        <property>engines/engine[2]/n1</property>
-        <factor> 0.09 </factor>
-        <min> 0.01 </min>
-        <max> 0.3 </max>
-      </volume>
-            <orientation>
-                <x>-1</x>
-                <y>0</y>
-                <z>0</z>
-                <inner-angle>75</inner-angle>
-                <outer-angle>220</outer-angle>
-                <outer-gain>0.3</outer-gain>
-           </orientation>
-      <pitch>
-        <property>engines/engine[2]/n1</property>
-        <factor> 0.01 </factor>
-        <min> 0.0 </min>
-        <max> 1.0 </max>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </engine>
-		
+			<name>engine2-running</name>
+			<path>Sounds/Engine/eng.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<not>
+					<property>sim/current-view/internal</property>
+				</not>
+				<property>/engines/engine[1]/n1</property>
+			</condition>
+			<position>
+				<x>-0.32961</x>
+				<y>-4.20425</y>
+				<z>0.06401</z>
+			</position>
+			<volume>
+				<property>engines/engine[1]/n1</property>
+				<factor> 0.09 </factor>
+				<min> 0.01 </min>
+				<max> 0.3 </max>
+			</volume>
+			<orientation>
+				<x>-1</x>
+				<y>0</y>
+				<z>0</z>
+				<inner-angle>75</inner-angle>
+				<outer-angle>220</outer-angle>
+				<outer-gain>0.3</outer-gain>
+			</orientation>
+			<pitch>
+				<property>engines/engine[1]/n1</property>
+				<factor> 0.01 </factor>
+				<min> 0.0 </min>
+				<max> 1.0 </max>
+			</pitch>
+			<reference-dist>100</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
 
 
 		<engine>
-   <name>engine4-running</name>
-   		<path>Sounds/Engine/eng.wav</path>
-   		<mode>looped</mode>
-	<condition>
-		<not>
-	<property>sim/current-view/internal</property>
-		</not>
-        <property>/engines/engine[3]/n1</property>
-	</condition>      
-		<position>
-			<x>0.33065</x>
-			<y>6.66262</y>
-			<z>-0.00211</z>
-		</position>
-      <volume>
-        <property>engines/engine[3]/n1</property>
-        <factor> 0.09 </factor>
-        <min> 0.01 </min>
-        <max> 0.3 </max>
-      </volume>
-            <orientation>
-                <x>-1</x>
-                <y>0</y>
-                <z>0</z>
-                <inner-angle>75</inner-angle>
-                <outer-angle>220</outer-angle>
-                <outer-gain>0.3</outer-gain>
-           </orientation>
-      <pitch>
-        <property>engines/engine[3]/n1</property>
-        <factor> 0.01 </factor>
-        <min> 0.0 </min>
-        <max> 1.0 </max>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </engine>
+			<name>engine3-running</name>
+			<path>Sounds/Engine/eng.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<not>
+					<property>sim/current-view/internal</property>
+				</not>
+				<property>/engines/engine[2]/n1</property>
+			</condition>
+			<position>
+				<x>-0.33182</x>
+				<y>4.18267</y>
+				<z>-0.06911</z>
+			</position>
+			<volume>
+				<property>engines/engine[2]/n1</property>
+				<factor> 0.09 </factor>
+				<min> 0.01 </min>
+				<max> 0.3 </max>
+			</volume>
+			<orientation>
+				<x>-1</x>
+				<y>0</y>
+				<z>0</z>
+				<inner-angle>75</inner-angle>
+				<outer-angle>220</outer-angle>
+				<outer-gain>0.3</outer-gain>
+			</orientation>
+			<pitch>
+				<property>engines/engine[2]/n1</property>
+				<factor> 0.01 </factor>
+				<min> 0.0 </min>
+				<max> 1.0 </max>
+			</pitch>
+			<reference-dist>100</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
 
-<!-- External Jet -->
-
-	<engine>
-   <name>engine1-outside-jet</name>
-   <path>Sounds/Engine/eng_outside.wav</path>
-   <mode>looped</mode>
-	<condition>
-		<not>
-	<property>sim/current-view/internal</property>
-		</not>
-	<property>/engines/engine/n1</property>
-	</condition>
-		<position>
-			<x>0.33175</x>
-			<y>-6.65874</y>
-			<z>-0.00211</z>
-		</position>
-   <volume>
-    <property>/engines/engine/thrust_lb</property>
-    <factor>0.000034551</factor>
-   </volume>
-          <orientation>
-                <x>1</x>
-                <y>0</y>
-                <z>1</z>
-                <inner-angle>75</inner-angle>
-                <outer-angle>210</outer-angle>
-                <outer-gain>0.5</outer-gain>
-         </orientation>
-      <pitch>
-        <property>engines/engine/n1</property>
-        <factor> 0.06 </factor>
-        <min> 0.01 </min>
-        <max> 0.5 </max>
-      </pitch>   
-	</engine>
-
-	<engine>
-   <name>engine2-outside-jet</name>
-   <path>Sounds/Engine/eng_outside.wav</path>
-   <mode>looped</mode>
-	<condition>
-		<not>
-	<property>sim/current-view/internal</property>
-		</not>
-	<property>/engines/engine[1]/n1</property>
-	</condition>
-		<position>
-			<x>-0.32961</x>
-			<y>-4.20425</y>
-			<z>0.06401</z>
-		</position>
-   <volume>
-          <orientation>
-                <x>1</x>
-                <y>0</y>
-                <z>1</z>
-                <inner-angle>75</inner-angle>
-                <outer-angle>210</outer-angle>
-                <outer-gain>0.5</outer-gain>
-         </orientation>
-   <property>/engines/engine[1]/thrust_lb</property>
-    <factor>0.000034551</factor>
-   </volume>
-      <pitch>
-        <property>engines/engine[1]/n1</property>
-        <factor> 0.06 </factor>
-        <min> 0.01 </min>
-        <max> 0.5 </max>
-      </pitch>   
-	</engine>
-
-	<engine>
-   <name>engine3-outside-jet</name>
-   <path>Sounds/Engine/eng_outside.wav</path>
-   <mode>looped</mode>
-	<condition>
-		<not>
-	<property>sim/current-view/internal</property>
-		</not>
-	<property>/engines/engine[2]/n1</property>
-	</condition>
-		<position>
-			<x>-0.33182</x>
-			<y>4.18267</y>
-			<z>-0.06911</z>
-		</position>
-   <volume>
-          <orientation>
-                <x>1</x>
-                <y>0</y>
-                <z>1</z>
-                <inner-angle>75</inner-angle>
-                <outer-angle>210</outer-angle>
-                <outer-gain>0.5</outer-gain>
-         </orientation>
-    <property>/engines/engine[2]/thrust_lb</property>
-    <factor>0.000034551</factor>
-   </volume>
-      <pitch>
-        <property>engines/engine[2]/n1</property>
-        <factor> 0.06 </factor>
-        <min> 0.01 </min>
-        <max> 0.5 </max>
-      </pitch>   
-	</engine>
-		
-	<engine>
-   <name>engine4-outside-jet</name>
-   <path>Sounds/Engine/eng_outside.wav</path>
-   <mode>looped</mode>
-	<condition>
-		<not>
-	<property>sim/current-view/internal</property>
-		</not>
-	<property>/engines/engine[3]/n1</property>
-	</condition>
-		<position>
-			<x>0.33065</x>
-			<y>6.66262</y>
-			<z>-0.00211</z>
-		</position>
-   <volume>
-          <orientation>
-                <x>1</x>
-                <y>0</y>
-                <z>1</z>
-                <inner-angle>75</inner-angle>
-                <outer-angle>210</outer-angle>
-                <outer-gain>0.5</outer-gain>
-         </orientation>
-    <property>/engines/engine[3]/thrust_lb</property>
-    <factor>0.000034551</factor>
-   </volume>
-      <pitch>
-        <property>engines/engine[3]/n1</property>
-        <factor> 0.06 </factor>
-        <min> 0.01 </min>
-        <max> 0.5 </max>
-      </pitch>   
-	</engine>
-
-<!-- Internal Engines Sounds -->
-
-<!-- APU -->
 
 		<engine>
-   <name>APU-inside</name>
-   		<path>Aircraft/Jumbolino/Sounds/apu_inside.wav</path>
-   		<mode>once</mode>
-	<condition>
-		<property>/controls/electric/APU-generator</property>
-        <property>sim/current-view/internal</property>
-	</condition>	
-	<condition>	
-		<property>/controls/APU/off-start-run</property>	
-	</condition>  
-		<position>
-			<x>0</x>
-			<y>0</y>
-			<z>0</z>
-		</position>      
-   	  <volume>
-        <property>/controls/APU/off-start-run</property>
-        <factor> 0.09 </factor>
-        <min> 0.0 </min>
-        <max> 0.2 </max>
-      </volume>
-      <pitch>
-        <property>/controls/APU/off-start-run</property>
-        <factor> 0.01 </factor>
-        <min> 0.0 </min>
-        <max> 1.0 </max>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </engine>
+			<name>engine4-running</name>
+			<path>Sounds/Engine/eng.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<not>
+					<property>sim/current-view/internal</property>
+				</not>
+				<property>/engines/engine[3]/n1</property>
+			</condition>
+			<position>
+				<x>0.33065</x>
+				<y>6.66262</y>
+				<z>-0.00211</z>
+			</position>
+			<volume>
+				<property>engines/engine[3]/n1</property>
+				<factor> 0.09 </factor>
+				<min> 0.01 </min>
+				<max> 0.3 </max>
+			</volume>
+			<orientation>
+				<x>-1</x>
+				<y>0</y>
+				<z>0</z>
+				<inner-angle>75</inner-angle>
+				<outer-angle>220</outer-angle>
+				<outer-gain>0.3</outer-gain>
+			</orientation>
+			<pitch>
+				<property>engines/engine[3]/n1</property>
+				<factor> 0.01 </factor>
+				<min> 0.0 </min>
+				<max> 1.0 </max>
+			</pitch>
+			<reference-dist>100</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
 
-<engine>
-   <name>APU-outside</name>
-        <path>Aircraft/Jumbolino/Sounds/apu_outside.wav</path>
-        <mode>once</mode>
-    <condition>
-        <property>/controls/electric/APU-generator</property>
-    </condition>    
-    <condition> 
-        <property>/controls/APU/off-start-run</property>    
-    </condition>  
-        <position>
-            <x>0</x>
-            <y>0</y>
-            <z>0</z>
-        </position>      
-      <volume>
-        <property>/controls/APU/off-start-run</property>
-        <factor> 0.09 </factor>
-        <min> 0.0 </min>
-        <max> 0.2 </max>
-      </volume>
-      <pitch>
-        <property>/controls/APU/off-start-run</property>
-        <factor> 0.01 </factor>
-        <min> 0.0 </min>
-        <max> 1.0 </max>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </engine>
-
-
-<!-- Engines Starting -->
+		<!-- External Jet -->
 
 		<engine>
-   <name>engine1-starting-inside</name>
-   		<path>Sounds/Engine/eng2.wav</path>
-   		<mode>looped</mode>
-	<condition>
-		<property>sim/current-view/internal</property>
-		<property>/controls/engines/engine/starter</property>	
-	</condition>  
-		<position>
-			<x>0.33175</x>
-			<y>-6.65874</y>
-			<z>-0.00211</z>
-		</position>      
-   	  <volume>
-        <property>engines/engine/n1</property>
-        <factor> 0.09 </factor>
-        <min> 0.01 </min>
-        <max> 0.4 </max>
-      </volume>
-            <orientation>
-                <x>-1</x>
-                <y>0</y>
-                <z>0</z>
-                <inner-angle>75</inner-angle>
-                <outer-angle>220</outer-angle>
-                <outer-gain>0.3</outer-gain>
-         </orientation>
-      <pitch>
-        <property>engines/engine/n1</property>
-        <factor> 0.01 </factor>
-        <min> 0.0 </min>
-        <max> 1.0 </max>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </engine>
+			<name>engine1-outside-jet</name>
+			<path>Sounds/Engine/eng_outside.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<not>
+					<property>sim/current-view/internal</property>
+				</not>
+				<property>/engines/engine/n1</property>
+			</condition>
+			<position>
+				<x>0.33175</x>
+				<y>-6.65874</y>
+				<z>-0.00211</z>
+			</position>
+			<volume>
+				<property>/engines/engine/thrust_lb</property>
+				<factor>0.000034551</factor>
+			</volume>
+			<orientation>
+				<x>1</x>
+				<y>0</y>
+				<z>1</z>
+				<inner-angle>75</inner-angle>
+				<outer-angle>210</outer-angle>
+				<outer-gain>0.5</outer-gain>
+			</orientation>
+			<pitch>
+				<property>engines/engine/n1</property>
+				<factor> 0.06 </factor>
+				<min> 0.01 </min>
+				<max> 0.5 </max>
+			</pitch>
+		</engine>
 
 		<engine>
-   <name>engine2-starting-inside</name>
-   		<path>Sounds/Engine/eng2.wav</path>
-   		<mode>looped</mode>
-	<condition>
-		<property>sim/current-view/internal</property>
-		<property>/controls/engines/engine[1]/starter</property>
-	</condition>      
-		<position>
-			<x>-0.32961</x>
-			<y>-4.20425</y>
-			<z>0.06401</z>
-		</position>      
-   	  <volume>
-        <property>engines/engine[1]/n1</property>
-        <factor> 0.09 </factor>
-        <min> 0.01 </min>
-        <max> 0.4 </max>
-      </volume>
-            <orientation>
-                <x>-1</x>
-                <y>0</y>
-                <z>0</z>
-                <inner-angle>75</inner-angle>
-                <outer-angle>220</outer-angle>
-                <outer-gain>0.3</outer-gain>
-         </orientation>
-      <pitch>
-        <property>engines/engine[1]/n1</property>
-        <factor> 0.01 </factor>
-        <min> 0.0 </min>
-        <max> 1.0 </max>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </engine>
+			<name>engine2-outside-jet</name>
+			<path>Sounds/Engine/eng_outside.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<not>
+					<property>sim/current-view/internal</property>
+				</not>
+				<property>/engines/engine[1]/n1</property>
+			</condition>
+			<position>
+				<x>-0.32961</x>
+				<y>-4.20425</y>
+				<z>0.06401</z>
+			</position>
+			<volume>
+				<orientation>
+					<x>1</x>
+					<y>0</y>
+					<z>1</z>
+					<inner-angle>75</inner-angle>
+					<outer-angle>210</outer-angle>
+					<outer-gain>0.5</outer-gain>
+				</orientation>
+				<property>/engines/engine[1]/thrust_lb</property>
+				<factor>0.000034551</factor>
+			</volume>
+			<pitch>
+				<property>engines/engine[1]/n1</property>
+				<factor> 0.06 </factor>
+				<min> 0.01 </min>
+				<max> 0.5 </max>
+			</pitch>
+		</engine>
 
 		<engine>
-   <name>engine3-starting-inside</name>
-   		<path>Sounds/Engine/eng2.wav</path>
-   		<mode>looped</mode>
-	<condition>
-		<property>sim/current-view/internal</property>
-		<property>/controls/engines/engine[2]/starter</property>	
-	</condition>      
-		<position>
-			<x>-0.33182</x>
-			<y>4.18267</y>
-			<z>-0.06911</z>
-		</position>      
-   	  <volume>
-        <property>engines/engine[2]/n1</property>
-        <factor> 0.09 </factor>
-        <min> 0.01 </min>
-        <max> 0.4 </max>
-      </volume>
-            <orientation>
-                <x>-1</x>
-                <y>0</y>
-                <z>0</z>
-                <inner-angle>75</inner-angle>
-                <outer-angle>220</outer-angle>
-                <outer-gain>0.3</outer-gain>
-           </orientation>
-      <pitch>
-        <property>engines/engine[2]/n1</property>
-        <factor> 0.01 </factor>
-        <min> 0.0 </min>
-        <max> 1.0 </max>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </engine>
+			<name>engine3-outside-jet</name>
+			<path>Sounds/Engine/eng_outside.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<not>
+					<property>sim/current-view/internal</property>
+				</not>
+				<property>/engines/engine[2]/n1</property>
+			</condition>
+			<position>
+				<x>-0.33182</x>
+				<y>4.18267</y>
+				<z>-0.06911</z>
+			</position>
+			<volume>
+				<orientation>
+					<x>1</x>
+					<y>0</y>
+					<z>1</z>
+					<inner-angle>75</inner-angle>
+					<outer-angle>210</outer-angle>
+					<outer-gain>0.5</outer-gain>
+				</orientation>
+				<property>/engines/engine[2]/thrust_lb</property>
+				<factor>0.000034551</factor>
+			</volume>
+			<pitch>
+				<property>engines/engine[2]/n1</property>
+				<factor> 0.06 </factor>
+				<min> 0.01 </min>
+				<max> 0.5 </max>
+			</pitch>
+		</engine>
 
 		<engine>
-   <name>engine4-starting-inside</name>
-   		<path>Sounds/Engine/eng2.wav</path>
-   		<mode>looped</mode>
-	<condition>
-		<property>sim/current-view/internal</property>
-		<property>/controls/engines/engine[3]/starter</property>
-	</condition>      
-		<position>
-			<x>0.33065</x>
-			<y>6.66262</y>
-			<z>-0.00211</z>
-		</position>      
-   	  <volume>
-        <property>engines/engine[3]/n1</property>
-        <factor> 0.09 </factor>
-        <min> 0.01 </min>
-        <max> 0.4 </max>
-      </volume>
-            <orientation>
-                <x>-1</x>
-                <y>0</y>
-                <z>0</z>
-                <inner-angle>75</inner-angle>
-                <outer-angle>220</outer-angle>
-                <outer-gain>0.3</outer-gain>
-           </orientation>
-      <pitch>
-        <property>engines/engine[3]/n1</property>
-        <factor> 0.01 </factor>
-        <min> 0.0 </min>
-        <max> 1.0 </max>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </engine>
+			<name>engine4-outside-jet</name>
+			<path>Sounds/Engine/eng_outside.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<not>
+					<property>sim/current-view/internal</property>
+				</not>
+				<property>/engines/engine[3]/n1</property>
+			</condition>
+			<position>
+				<x>0.33065</x>
+				<y>6.66262</y>
+				<z>-0.00211</z>
+			</position>
+			<volume>
+				<orientation>
+					<x>1</x>
+					<y>0</y>
+					<z>1</z>
+					<inner-angle>75</inner-angle>
+					<outer-angle>210</outer-angle>
+					<outer-gain>0.5</outer-gain>
+				</orientation>
+				<property>/engines/engine[3]/thrust_lb</property>
+				<factor>0.000034551</factor>
+			</volume>
+			<pitch>
+				<property>engines/engine[3]/n1</property>
+				<factor> 0.06 </factor>
+				<min> 0.01 </min>
+				<max> 0.5 </max>
+			</pitch>
+		</engine>
 
+		<!-- Internal Engines Sounds -->
 
-<!-- Internal Whine -->
-
-		<engine>
-   <name>engine1-internal</name>
-   		<path>Sounds/Engine/eng.wav</path>
-   		<mode>looped</mode>
-	<condition>
-			<property>sim/current-view/internal</property>	
-	</condition>  
-	<condition>
-	<property>/engines/engine/n1</property>	
-	</condition>	
-		<position>
-			<x>0.33175</x>
-			<y>-6.65874</y>
-			<z>-0.00211</z>
-		</position>      
-   	  <volume>
-        <property>engines/engine/n1</property>
-        <factor> 0.09 </factor>
-        <min> 0.01 </min>
-        <max> 0.06 </max>
-      </volume>
-            <orientation>
-                <x>-1</x>
-                <y>0</y>
-                <z>0</z>
-                <inner-angle>75</inner-angle>
-                <outer-angle>220</outer-angle>
-                <outer-gain>0.3</outer-gain>
-           </orientation>
-      <pitch>
-        <property>engines/engine/n1</property>
-        <factor> 0.01 </factor>
-        <min> 0.1 </min>
-        <max> 1.0 </max>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </engine>
+		<!-- APU -->
 
 		<engine>
-   <name>engine2-internal</name>
-   		<path>Sounds/Engine/eng.wav</path>
-   		<mode>looped</mode>
-	<condition>
-			<property>sim/current-view/internal</property>	
-	</condition>  
-	<condition>
-	<property>/engines/engine[1]/n1</property>		
-	</condition>	
-		<position>
-			<x>-0.32961</x>
-			<y>-4.20425</y>
-			<z>0.06401</z>
-		</position>      
-   	  <volume>
-        <property>engines/engine[1]/n1</property>
-        <factor> 0.09 </factor>
-        <min> 0.01 </min>
-        <max> 0.06 </max>
-      </volume>
-            <orientation>
-                <x>-1</x>
-                <y>0</y>
-                <z>0</z>
-                <inner-angle>75</inner-angle>
-                <outer-angle>220</outer-angle>
-                <outer-gain>0.3</outer-gain>
-           </orientation>
-      <pitch>
-        <property>engines/engine[1]/n1</property>
-        <factor> 0.01 </factor>
-        <min> 0.1 </min>
-        <max> 1.0 </max>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </engine>
+			<name>APU-inside</name>
+			<path>Aircraft/Jumbolino/Sounds/apu_inside.wav</path>
+			<mode>once</mode>
+			<condition>
+				<property>/controls/electric/APU-generator</property>
+				<property>sim/current-view/internal</property>
+			</condition>
+			<condition>
+				<property>/controls/APU/off-start-run</property>
+			</condition>
+			<position>
+				<x>0</x>
+				<y>0</y>
+				<z>0</z>
+			</position>
+			<volume>
+				<property>/controls/APU/off-start-run</property>
+				<factor> 0.09 </factor>
+				<min> 0.0 </min>
+				<max> 0.2 </max>
+			</volume>
+			<pitch>
+				<property>/controls/APU/off-start-run</property>
+				<factor> 0.01 </factor>
+				<min> 0.0 </min>
+				<max> 1.0 </max>
+			</pitch>
+			<reference-dist>100</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
 
 		<engine>
-   <name>engine3-internal</name>
-   		<path>Sounds/Engine/eng.wav</path>
-   		<mode>looped</mode>
-	<condition>
-			<property>sim/current-view/internal</property>	
-	</condition>  
-	<condition>
-	<property>/engines/engine[2]/n1</property>		
-	</condition>	
-		<position>
-			<x>-0.33182</x>
-			<y>4.18267</y>
-			<z>-0.06911</z>
-		</position>      
-   	  <volume>
-        <property>engines/engine[2]/n1</property>
-        <factor> 0.09 </factor>
-        <min> 0.01 </min>
-        <max> 0.06 </max>
-      </volume>
-            <orientation>
-                <x>-1</x>
-                <y>0</y>
-                <z>0</z>
-                <inner-angle>75</inner-angle>
-                <outer-angle>220</outer-angle>
-                <outer-gain>0.3</outer-gain>
-           </orientation>
-      <pitch>
-        <property>engines/engine[2]/n1</property>
-        <factor> 0.01 </factor>
-        <min> 0.1 </min>
-        <max> 1.0 </max>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </engine>
+			<name>APU-outside</name>
+			<path>Aircraft/Jumbolino/Sounds/apu_outside.wav</path>
+			<mode>once</mode>
+			<condition>
+				<property>/controls/electric/APU-generator</property>
+			</condition>
+			<condition>
+				<property>/controls/APU/off-start-run</property>
+			</condition>
+			<position>
+				<x>0</x>
+				<y>0</y>
+				<z>0</z>
+			</position>
+			<volume>
+				<property>/controls/APU/off-start-run</property>
+				<factor> 0.09 </factor>
+				<min> 0.0 </min>
+				<max> 0.2 </max>
+			</volume>
+			<pitch>
+				<property>/controls/APU/off-start-run</property>
+				<factor> 0.01 </factor>
+				<min> 0.0 </min>
+				<max> 1.0 </max>
+			</pitch>
+			<reference-dist>100</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
+
+
+		<!-- Engines Starting -->
 
 		<engine>
-   <name>engine4-internal</name>
-   		<path>Sounds/Engine/eng.wav</path>
-   		<mode>looped</mode>
-	<condition>
-			<property>sim/current-view/internal</property>	
-	</condition>  
-	<condition>
-	<property>/engines/engine[3]/n1</property>	
-	</condition>	
-		<position>
-			<x>0.33065</x>
-			<y>6.66262</y>
-			<z>-0.00211</z>
-		</position>      
-   	  <volume>
-        <property>engines/engine[3]/n1</property>
-        <factor> 0.09 </factor>
-        <min> 0.01 </min>
-        <max> 0.06 </max>
-      </volume>
-            <orientation>
-                <x>-1</x>
-                <y>0</y>
-                <z>0</z>
-                <inner-angle>75</inner-angle>
-                <outer-angle>220</outer-angle>
-                <outer-gain>0.3</outer-gain>
-           </orientation>
-      <pitch>
-        <property>engines/engine[3]/n1</property>
-        <factor> 0.01 </factor>
-        <min> 0.1 </min>
-        <max> 1.0 </max>
-      </pitch>
-      <reference-dist>100</reference-dist>
-      <max-dist>1000</max-dist>
-    </engine>
-
-<!-- Internal Jet -->
+			<name>engine1-starting-inside</name>
+			<path>Sounds/Engine/eng2.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<property>sim/current-view/internal</property>
+				<property>/controls/engines/engine/starter</property>
+			</condition>
+			<position>
+				<x>0.33175</x>
+				<y>-6.65874</y>
+				<z>-0.00211</z>
+			</position>
+			<volume>
+				<property>engines/engine/n1</property>
+				<factor> 0.09 </factor>
+				<min> 0.01 </min>
+				<max> 0.4 </max>
+			</volume>
+			<orientation>
+				<x>-1</x>
+				<y>0</y>
+				<z>0</z>
+				<inner-angle>75</inner-angle>
+				<outer-angle>220</outer-angle>
+				<outer-gain>0.3</outer-gain>
+			</orientation>
+			<pitch>
+				<property>engines/engine/n1</property>
+				<factor> 0.01 </factor>
+				<min> 0.0 </min>
+				<max> 1.0 </max>
+			</pitch>
+			<reference-dist>100</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
 
 		<engine>
-   <name>engine1-internal-jet</name>
-   <path>Sounds/eng_inside.wav</path>
-   <mode>looped</mode>
-	<condition>
-		<property>sim/current-view/internal</property>
-	</condition>
-	<condition>
-		<property>/engines/engine/n1</property>
-	</condition>
-		<position>
-			<x>0.33175</x>
-			<y>-6.65874</y>
-			<z>-0.00211</z>
-		</position>
-   <volume>
-          <orientation>
-                <x>1</x>
-                <y>0</y>
-                <z>1</z>
-                <inner-angle>75</inner-angle>
-                <outer-angle>210</outer-angle>
-                <outer-gain>0.5</outer-gain>
-         </orientation>
-    <property>/engines/engine/thrust_lb</property>
-    <factor>0.0001233</factor>
-   </volume>
-   </engine>
+			<name>engine2-starting-inside</name>
+			<path>Sounds/Engine/eng2.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<property>sim/current-view/internal</property>
+				<property>/controls/engines/engine[1]/starter</property>
+			</condition>
+			<position>
+				<x>-0.32961</x>
+				<y>-4.20425</y>
+				<z>0.06401</z>
+			</position>
+			<volume>
+				<property>engines/engine[1]/n1</property>
+				<factor> 0.09 </factor>
+				<min> 0.01 </min>
+				<max> 0.4 </max>
+			</volume>
+			<orientation>
+				<x>-1</x>
+				<y>0</y>
+				<z>0</z>
+				<inner-angle>75</inner-angle>
+				<outer-angle>220</outer-angle>
+				<outer-gain>0.3</outer-gain>
+			</orientation>
+			<pitch>
+				<property>engines/engine[1]/n1</property>
+				<factor> 0.01 </factor>
+				<min> 0.0 </min>
+				<max> 1.0 </max>
+			</pitch>
+			<reference-dist>100</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
 
 		<engine>
-   <name>engine2-internal-jet</name>
-   <path>Sounds/eng_inside.wav</path>
-   <mode>looped</mode>
-	<condition>
-		<property>sim/current-view/internal</property>
-	</condition>
-	<condition>
-		<property>/engines/engine[1]/n1</property>
-	</condition>
-		<position>
-			<x>-0.32961</x>
-			<y>-4.20425</y>
-			<z>0.06401</z>
-		</position>
-   <volume>
-          <orientation>
-                <x>1</x>
-                <y>0</y>
-                <z>1</z>
-                <inner-angle>75</inner-angle>
-                <outer-angle>210</outer-angle>
-                <outer-gain>0.5</outer-gain>
-         </orientation>
-    <property>/engines/engine[1]/thrust_lb</property>
-    <factor>0.0001233</factor>
-   </volume>
-   </engine>
+			<name>engine3-starting-inside</name>
+			<path>Sounds/Engine/eng2.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<property>sim/current-view/internal</property>
+				<property>/controls/engines/engine[2]/starter</property>
+			</condition>
+			<position>
+				<x>-0.33182</x>
+				<y>4.18267</y>
+				<z>-0.06911</z>
+			</position>
+			<volume>
+				<property>engines/engine[2]/n1</property>
+				<factor> 0.09 </factor>
+				<min> 0.01 </min>
+				<max> 0.4 </max>
+			</volume>
+			<orientation>
+				<x>-1</x>
+				<y>0</y>
+				<z>0</z>
+				<inner-angle>75</inner-angle>
+				<outer-angle>220</outer-angle>
+				<outer-gain>0.3</outer-gain>
+			</orientation>
+			<pitch>
+				<property>engines/engine[2]/n1</property>
+				<factor> 0.01 </factor>
+				<min> 0.0 </min>
+				<max> 1.0 </max>
+			</pitch>
+			<reference-dist>100</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
 
 		<engine>
-   <name>engine3-internal-jet</name>
-   <path>Sounds/eng_inside.wav</path>
-   <mode>looped</mode>
-	<condition>
-		<property>sim/current-view/internal</property>
-	</condition>
-	<condition>
-		<property>/engines/engine[2]/n1</property>
-	</condition>
-		<position>
-			<x>-0.33182</x>
-			<y>4.18267</y>
-			<z>-0.06911</z>
-		</position>
-   <volume>
-    <property>/engines/engine[2]/thrust_lb</property>
-    <factor>0.0001233</factor>
-   </volume>
-   </engine>
+			<name>engine4-starting-inside</name>
+			<path>Sounds/Engine/eng2.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<property>sim/current-view/internal</property>
+				<property>/controls/engines/engine[3]/starter</property>
+			</condition>
+			<position>
+				<x>0.33065</x>
+				<y>6.66262</y>
+				<z>-0.00211</z>
+			</position>
+			<volume>
+				<property>engines/engine[3]/n1</property>
+				<factor> 0.09 </factor>
+				<min> 0.01 </min>
+				<max> 0.4 </max>
+			</volume>
+			<orientation>
+				<x>-1</x>
+				<y>0</y>
+				<z>0</z>
+				<inner-angle>75</inner-angle>
+				<outer-angle>220</outer-angle>
+				<outer-gain>0.3</outer-gain>
+			</orientation>
+			<pitch>
+				<property>engines/engine[3]/n1</property>
+				<factor> 0.01 </factor>
+				<min> 0.0 </min>
+				<max> 1.0 </max>
+			</pitch>
+			<reference-dist>100</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
+
+
+		<!-- Internal Whine -->
 
 		<engine>
-   <name>engine4-internal-jet</name>
-   <path>Sounds/eng_inside.wav</path>
-   <mode>looped</mode>
-	<condition>
-		<property>sim/current-view/internal</property>
-	</condition>
-	<condition>
-		<property>/engines/engine[3]/n1</property>
-	</condition>
-		<position>
-			<x>0.33065</x>
-			<y>6.66262</y>
-			<z>-0.00211</z>
-		</position>
-   <volume>
-          <orientation>
-                <x>1</x>
-                <y>0</y>
-                <z>1</z>
-                <inner-angle>75</inner-angle>
-                <outer-angle>210</outer-angle>
-                <outer-gain>0.5</outer-gain>
-         </orientation>
-    <property>/engines/engine[3]/thrust_lb</property>
-    <factor>0.0001233</factor>
-   </volume>
-   </engine>
+			<name>engine1-internal</name>
+			<path>Sounds/Engine/eng.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<property>sim/current-view/internal</property>
+			</condition>
+			<condition>
+				<property>/engines/engine/n1</property>
+			</condition>
+			<position>
+				<x>0.33175</x>
+				<y>-6.65874</y>
+				<z>-0.00211</z>
+			</position>
+			<volume>
+				<property>engines/engine/n1</property>
+				<factor> 0.09 </factor>
+				<min> 0.01 </min>
+				<max> 0.06 </max>
+			</volume>
+			<orientation>
+				<x>-1</x>
+				<y>0</y>
+				<z>0</z>
+				<inner-angle>75</inner-angle>
+				<outer-angle>220</outer-angle>
+				<outer-gain>0.3</outer-gain>
+			</orientation>
+			<pitch>
+				<property>engines/engine/n1</property>
+				<factor> 0.01 </factor>
+				<min> 0.1 </min>
+				<max> 1.0 </max>
+			</pitch>
+			<reference-dist>100</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
 
-<!-- Pnuematics -->
+		<engine>
+			<name>engine2-internal</name>
+			<path>Sounds/Engine/eng.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<property>sim/current-view/internal</property>
+			</condition>
+			<condition>
+				<property>/engines/engine[1]/n1</property>
+			</condition>
+			<position>
+				<x>-0.32961</x>
+				<y>-4.20425</y>
+				<z>0.06401</z>
+			</position>
+			<volume>
+				<property>engines/engine[1]/n1</property>
+				<factor> 0.09 </factor>
+				<min> 0.01 </min>
+				<max> 0.06 </max>
+			</volume>
+			<orientation>
+				<x>-1</x>
+				<y>0</y>
+				<z>0</z>
+				<inner-angle>75</inner-angle>
+				<outer-angle>220</outer-angle>
+				<outer-gain>0.3</outer-gain>
+			</orientation>
+			<pitch>
+				<property>engines/engine[1]/n1</property>
+				<factor> 0.01 </factor>
+				<min> 0.1 </min>
+				<max> 1.0 </max>
+			</pitch>
+			<reference-dist>100</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
+
+		<engine>
+			<name>engine3-internal</name>
+			<path>Sounds/Engine/eng.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<property>sim/current-view/internal</property>
+			</condition>
+			<condition>
+				<property>/engines/engine[2]/n1</property>
+			</condition>
+			<position>
+				<x>-0.33182</x>
+				<y>4.18267</y>
+				<z>-0.06911</z>
+			</position>
+			<volume>
+				<property>engines/engine[2]/n1</property>
+				<factor> 0.09 </factor>
+				<min> 0.01 </min>
+				<max> 0.06 </max>
+			</volume>
+			<orientation>
+				<x>-1</x>
+				<y>0</y>
+				<z>0</z>
+				<inner-angle>75</inner-angle>
+				<outer-angle>220</outer-angle>
+				<outer-gain>0.3</outer-gain>
+			</orientation>
+			<pitch>
+				<property>engines/engine[2]/n1</property>
+				<factor> 0.01 </factor>
+				<min> 0.1 </min>
+				<max> 1.0 </max>
+			</pitch>
+			<reference-dist>100</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
+
+		<engine>
+			<name>engine4-internal</name>
+			<path>Sounds/Engine/eng.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<property>sim/current-view/internal</property>
+			</condition>
+			<condition>
+				<property>/engines/engine[3]/n1</property>
+			</condition>
+			<position>
+				<x>0.33065</x>
+				<y>6.66262</y>
+				<z>-0.00211</z>
+			</position>
+			<volume>
+				<property>engines/engine[3]/n1</property>
+				<factor> 0.09 </factor>
+				<min> 0.01 </min>
+				<max> 0.06 </max>
+			</volume>
+			<orientation>
+				<x>-1</x>
+				<y>0</y>
+				<z>0</z>
+				<inner-angle>75</inner-angle>
+				<outer-angle>220</outer-angle>
+				<outer-gain>0.3</outer-gain>
+			</orientation>
+			<pitch>
+				<property>engines/engine[3]/n1</property>
+				<factor> 0.01 </factor>
+				<min> 0.1 </min>
+				<max> 1.0 </max>
+			</pitch>
+			<reference-dist>100</reference-dist>
+			<max-dist>1000</max-dist>
+		</engine>
+
+		<!-- Internal Jet -->
+
+		<engine>
+			<name>engine1-internal-jet</name>
+			<path>Sounds/eng_inside.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<property>sim/current-view/internal</property>
+			</condition>
+			<condition>
+				<property>/engines/engine/n1</property>
+			</condition>
+			<position>
+				<x>0.33175</x>
+				<y>-6.65874</y>
+				<z>-0.00211</z>
+			</position>
+			<volume>
+				<orientation>
+					<x>1</x>
+					<y>0</y>
+					<z>1</z>
+					<inner-angle>75</inner-angle>
+					<outer-angle>210</outer-angle>
+					<outer-gain>0.5</outer-gain>
+				</orientation>
+				<property>/engines/engine/thrust_lb</property>
+				<factor>0.0001233</factor>
+			</volume>
+		</engine>
+
+		<engine>
+			<name>engine2-internal-jet</name>
+			<path>Sounds/eng_inside.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<property>sim/current-view/internal</property>
+			</condition>
+			<condition>
+				<property>/engines/engine[1]/n1</property>
+			</condition>
+			<position>
+				<x>-0.32961</x>
+				<y>-4.20425</y>
+				<z>0.06401</z>
+			</position>
+			<volume>
+				<orientation>
+					<x>1</x>
+					<y>0</y>
+					<z>1</z>
+					<inner-angle>75</inner-angle>
+					<outer-angle>210</outer-angle>
+					<outer-gain>0.5</outer-gain>
+				</orientation>
+				<property>/engines/engine[1]/thrust_lb</property>
+				<factor>0.0001233</factor>
+			</volume>
+		</engine>
+
+		<engine>
+			<name>engine3-internal-jet</name>
+			<path>Sounds/eng_inside.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<property>sim/current-view/internal</property>
+			</condition>
+			<condition>
+				<property>/engines/engine[2]/n1</property>
+			</condition>
+			<position>
+				<x>-0.33182</x>
+				<y>4.18267</y>
+				<z>-0.06911</z>
+			</position>
+			<volume>
+				<property>/engines/engine[2]/thrust_lb</property>
+				<factor>0.0001233</factor>
+			</volume>
+		</engine>
+
+		<engine>
+			<name>engine4-internal-jet</name>
+			<path>Sounds/eng_inside.wav</path>
+			<mode>looped</mode>
+			<condition>
+				<property>sim/current-view/internal</property>
+			</condition>
+			<condition>
+				<property>/engines/engine[3]/n1</property>
+			</condition>
+			<position>
+				<x>0.33065</x>
+				<y>6.66262</y>
+				<z>-0.00211</z>
+			</position>
+			<volume>
+				<orientation>
+					<x>1</x>
+					<y>0</y>
+					<z>1</z>
+					<inner-angle>75</inner-angle>
+					<outer-angle>210</outer-angle>
+					<outer-gain>0.5</outer-gain>
+				</orientation>
+				<property>/engines/engine[3]/thrust_lb</property>
+				<factor>0.0001233</factor>
+			</volume>
+		</engine>
+
+		<!-- Pnuematics -->
 
 		<pneumatic>
 			<name>pneumatic break close</name>
 			<mode>once</mode>
 			<path>Sounds/pneumaticlose.wav</path>
 			<condition>
-				 <property>/controls/gear/brake-parking</property>
+				<property>/controls/gear/brake-parking</property>
 			</condition>
 			<volume>
 				<factor>1</factor>
@@ -1012,12 +1008,14 @@
 			<mode>once</mode>
 			<path>Sounds/pneumatic.wav</path>
 			<condition>
-				<not><property>/controls/gear/brake-parking</property></not>
+				<not>
+					<property>/controls/gear/brake-parking</property>
+				</not>
 			</condition>
 			<volume>
 				<factor>1</factor>
 			</volume>
-		</pneumatic>		
+		</pneumatic>
 
 		<rumble>
 			<name>rumble</name>
@@ -1331,7 +1329,6 @@
 		</speedbrake>
 
 
-			
 		<!-- Crashed -->
 
 		<crash>
@@ -1489,8 +1486,8 @@
 			<path>Sounds/GPWS/200.wav</path>
 			<condition>
 				<less-than-equals>
-                    		<property>position/altitude-agl-ft</property>
-                    		<value>200</value>
+					<property>position/altitude-agl-ft</property>
+					<value>200</value>
 				</less-than-equals>
 			</condition>
 			<volume>
@@ -1538,7 +1535,7 @@
 				</less-than-equals>
 			</condition>
 			<volume>
-			<property>sim/sound/Evolume</property>
+				<property>sim/sound/Evolume</property>
 			</volume>
 			<position>
 				<x>-5</x>
