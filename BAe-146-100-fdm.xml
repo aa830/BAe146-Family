@@ -12,6 +12,11 @@
 	</fileheader>
 
 	<!--
+
+		[1] dimensions, see: https://upload.wikimedia.org/wikipedia/commons/e/e3/BAe_146_v1.0.png
+		[2] Aero-Matic, see: https://jsbsim.sourceforge.net/aeromatic2.html
+
+
 		File:     		BAe 146/Avro RJ.xml
 	
 		Inputs:
@@ -174,7 +179,7 @@
 	<buoyant_forces></buoyant_forces>
 
 	<propulsion>
-		<engine file="ALF502R3_1">
+		<engine file="ALF502R3_1"><!-- left outer engine -->
 			<!--location unit="IN">
 				<x> 1514.88 </x>
 				<y> -60.00 </y>
@@ -187,20 +192,20 @@
 			</orient-->
 			<feed>0</feed>
 			<thruster file="direct">
-				<location unit="IN">
-					<x> 1514.88 </x>
-					<y> -60.00 </y>
-					<z> 0.00 </z>
+				<location unit="M">
+					<x> 10.80 </x>
+					<y> -6.69 </y>
+					<z>  0.00 </z>
 				</location>
 				<orient unit="DEG">
 					<pitch> 0.00 </pitch>
-					<roll> 0.00 </roll>
-					<yaw> 0.00 </yaw>
+					<roll>  0.00 </roll>
+					<yaw>   0.00 </yaw>
 				</orient>
 			</thruster>
 		</engine>
 
-		<engine file="ALF502R3_2">
+		<engine file="ALF502R3_2"><!-- left inner engine -->
 			<!--location unit="IN">
 				<x> 1514.88 </x>
 				<y> -20.00 </y>
@@ -213,20 +218,20 @@
 			</orient-->
 			<feed>1</feed>
 			<thruster file="direct">
-				<location unit="IN">
-					<x> 1514.88 </x>
-					<y> -20.00 </y>
-					<z> 0.00 </z>
+				<location unit="M">
+					<x>  9.90 </x>
+					<y> -4.04 </y>
+					<z>  0.00 </z>
 				</location>
 				<orient unit="DEG">
 					<pitch> 0.00 </pitch>
-					<roll> 0.00 </roll>
-					<yaw> 0.00 </yaw>
+					<roll>  0.00 </roll>
+					<yaw>   0.00 </yaw>
 				</orient>
 			</thruster>
 		</engine>
 
-		<engine file="ALF502R3_3">
+		<engine file="ALF502R3_3"><!-- right inner engine -->
 			<!--location unit="IN">
 				<x> 1514.88 </x>
 				<y> 20.00 </y>
@@ -239,20 +244,20 @@
 			</orient-->
 			<feed>2</feed>
 			<thruster file="direct">
-				<location unit="IN">
-					<x> 1514.88 </x>
-					<y> 20.00 </y>
+				<location unit="M">
+					<x> 9.90 </x>
+					<y> 4.04 </y>
 					<z> 0.00 </z>
 				</location>
 				<orient unit="DEG">
 					<pitch> 0.00 </pitch>
-					<roll> 0.00 </roll>
-					<yaw> 0.00 </yaw>
+					<roll>  0.00 </roll>
+					<yaw>   0.00 </yaw>
 				</orient>
 			</thruster>
 		</engine>
 
-		<engine file="ALF502R3_4">
+		<engine file="ALF502R3_4"><!-- right outer engine -->
 			<!--location unit="IN">
 				<x> 1514.88 </x>
 				<y> 60.00 </y>
@@ -265,15 +270,15 @@
 			</orient-->
 			<feed>3</feed>
 			<thruster file="direct">
-				<location unit="IN">
-					<x> 1514.88 </x>
-					<y> 60.00 </y>
-					<z> 0.00 </z>
+				<location unit="M">
+					<x> 10.80 </x>
+					<y>  6.69 </y>
+					<z>  0.00 </z>
 				</location>
 				<orient unit="DEG">
 					<pitch> 0.00 </pitch>
-					<roll> 0.00 </roll>
-					<yaw> 0.00 </yaw>
+					<roll>  0.00 </roll>
+					<yaw>   0.00 </yaw>
 				</orient>
 			</thruster>
 		</engine>
