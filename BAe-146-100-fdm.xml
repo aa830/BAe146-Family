@@ -175,16 +175,16 @@
 
 	<propulsion>
 		<engine file="ALF502R3_1">
-			<location unit="IN">
+			<!--location unit="IN">
 				<x> 1514.88 </x>
 				<y> -60.00 </y>
 				<z> 0.00 </z>
-			</location>
-			<orient unit="DEG">
+			</location-->
+			<!--orient unit="DEG">
 				<pitch> 0.00 </pitch>
 				<roll> 0.00 </roll>
 				<yaw> 0.00 </yaw>
-			</orient>
+			</orient-->
 			<feed>0</feed>
 			<thruster file="direct">
 				<location unit="IN">
@@ -201,16 +201,16 @@
 		</engine>
 
 		<engine file="ALF502R3_2">
-			<location unit="IN">
+			<!--location unit="IN">
 				<x> 1514.88 </x>
 				<y> -20.00 </y>
 				<z> 0.00 </z>
-			</location>
-			<orient unit="DEG">
+			</location-->
+			<!--orient unit="DEG">
 				<pitch> 0.00 </pitch>
 				<roll> 0.00 </roll>
 				<yaw> 0.00 </yaw>
-			</orient>
+			</orient-->
 			<feed>1</feed>
 			<thruster file="direct">
 				<location unit="IN">
@@ -227,16 +227,16 @@
 		</engine>
 
 		<engine file="ALF502R3_3">
-			<location unit="IN">
+			<!--location unit="IN">
 				<x> 1514.88 </x>
 				<y> 20.00 </y>
 				<z> 0.00 </z>
-			</location>
-			<orient unit="DEG">
+			</location-->
+			<!--orient unit="DEG">
 				<pitch> 0.00 </pitch>
 				<roll> 0.00 </roll>
 				<yaw> 0.00 </yaw>
-			</orient>
+			</orient-->
 			<feed>2</feed>
 			<thruster file="direct">
 				<location unit="IN">
@@ -253,16 +253,16 @@
 		</engine>
 
 		<engine file="ALF502R3_4">
-			<location unit="IN">
+			<!--location unit="IN">
 				<x> 1514.88 </x>
 				<y> 60.00 </y>
 				<z> 0.00 </z>
-			</location>
-			<orient unit="DEG">
+			</location-->
+			<!--orient unit="DEG">
 				<pitch> 0.00 </pitch>
 				<roll> 0.00 </roll>
 				<yaw> 0.00 </yaw>
-			</orient>
+			</orient-->
 			<feed>3</feed>
 			<thruster file="direct">
 				<location unit="IN">
