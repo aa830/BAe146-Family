@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!--
+    [1] see: https://wiki.flightgear.org/JSBSim_Thrusters#FGDirect
+-->
+
 <direct name="Direct">
 </direct>
