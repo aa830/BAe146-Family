@@ -75,8 +75,13 @@
      <z> -39.37 </z>
    </location>
    <pointmass name="Payload">
+    <!--
+      THIS is A BUG!
+      Weight CAN NOT be negative. This is impossible (and not allowed by schema either)
     <description> -3887 LBS + full (35202 LBS) fuel should bring model up to entered max weight</description>
     <weight unit="LBS">  -1943.6 </weight>
+    -->
+    <weight>0.0</weight>
     <location name="POINTMASS" unit="IN">
       <x> 866.18 </x>
       <y>   0.00 </y>
