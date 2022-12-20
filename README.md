@@ -20,6 +20,9 @@ Finished v1 of FDM, Aircraft Model present. Sounds from JMaverick's A330 added (
   ```
 * Add `/home/user/fgfs-addons/Aircraft` to the list of aircraft folders in the Addons tab of the launcher,
   or add `--aircraft-dir=/home/user/fgfs-addons/Aircraft` on the command line.
+  
+* Alternatively, download the code from this page, extract the ZIP, rename the file to BAe-146-Family and put it in your Aircraft folder
+  
 * Use it ! :)
 
 ## Contents
