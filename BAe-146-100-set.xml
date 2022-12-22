@@ -16,8 +16,12 @@
 
 		<minimum-fg-version>2018.3.0</minimum-fg-version>
 		
+		<!-- experiments with fdms generated with different inputs -->
+		
 		<flight-model>jsb</flight-model>
-		<aero>Systems/BAe-146-100-fdm</aero>
+		<!--aero>Systems/BAe-146-100-fdm</aero-->
+		<aero>Systems/fdm_emptywt</aero>
+		<!--aero>Systems/fdm_noemptywt</aero-->
 		
 		<model>
 			<path>Aircraft/BAe146-Family/Models/BAe-146-100.xml</path>
