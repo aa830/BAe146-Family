@@ -25,4 +25,10 @@
 		
 		<menubar include="gui/menu.xml"/>
 	</sim>
+	
+	<nasal>
+		<bae146>
+			<file>Nasal/BAe146.nas</file>
+		</bae146>
+	</nasal>
 </PropertyList>
