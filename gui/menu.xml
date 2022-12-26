@@ -5,7 +5,7 @@
             <label>BAe 146</label>
             <enabled type="bool">true</enabled>
 
-            <item>
+            <!--<item>
                 <label>Autostart</label>
                 <binding>
                     <command>property-toggle</command>
@@ -19,13 +19,13 @@
                     <command>nasal</command>
                     <script>fgcommand("dialog-show", props.Node.new({"dialog-name": "options"}));</script>
                 </binding>
-            </item>
+            </item>-->
 
             <item>
                 <label>Fuel truck</label>
                 <binding>
-                    <command>nasal</command>
-                    <script>fgcommand("dialog-show", props.Node.new({"dialog-name": "fuel-truck"}));</script>
+                    <command>dialog-show</command>
+                    <dialog-name>fuel-truck</dialog-name>
                 </binding>
             </item>
 
@@ -41,7 +41,7 @@
                 <label>About this aircraft</label>
                 <binding>
                     <command>dialog-show</command>
-                    <dialog-name>Bae146-about</dialog-name>
+                    <dialog-name>about</dialog-name>
                 </binding>
             </item>
         </menu>

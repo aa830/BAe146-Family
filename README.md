@@ -7,7 +7,7 @@ The BAe-146 family implemented for FlightGear.
 WIP
 
 ## Progress
-Finished v1 of FDM, Aircraft Model present. Sounds from JMaverick's A330 added (Need engine sounds). Need to work on interior.
+Finished v1 of FDM, Aircraft Model present. Sounds from JMaverick's A330 added Engine sounds present. Need to work on interior.
 
 
 ## Installation

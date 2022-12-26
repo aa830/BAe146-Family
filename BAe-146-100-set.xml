@@ -29,19 +29,28 @@
 		<menubar include="gui/menu.xml"/>
 	</sim>
 	
-	<propulsion>
-		<engine n="0">
-			<thrust-coefficient type="double">1.0</thrust-coefficient>
-		</engine>
-		<engine n="1">
-			<thrust-coefficient type="double">1.0</thrust-coefficient>
-		</engine>
-		<engine n="2">
-			<thrust-coefficient type="double">1.0</thrust-coefficient>
-		</engine>
-		<engine n="3">
-			<thrust-coefficient type="double">1.0</thrust-coefficient>
-		</engine>
-	</propulsion>
+  <fdm>
+    <jsbsim>
+      <propulsion>
+        <engine n="0">
+          <thrust-coefficient type="double">1.0</thrust-coefficient>
+        </engine>
+        <engine n="1">
+          <thrust-coefficient type="double">1.0</thrust-coefficient>
+        </engine>
+        <engine n="2">
+          <thrust-coefficient type="double">1.0</thrust-coefficient>
+        </engine>
+        <engine n="3">
+          <thrust-coefficient type="double">1.0</thrust-coefficient>
+        </engine>
+      </propulsion>
+    </jsbsim>
+  </fdm>
 
+	<nasal>
+		<bae146>
+			<file>Nasal/BAe146.nas</file>
+		</bae146>
+	</nasal>
 </PropertyList>
