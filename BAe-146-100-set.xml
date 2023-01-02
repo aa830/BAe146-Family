@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PropertyList>
+
 	<sim>
 		<description>BAe 146</description>
        		<long-description>The British Aerospace 146 (BAe 146) is a 70-112 seat, four turbine engined, high wing aircraft with a retractable tricycle gear. Originally developed by British Aerospace, Avro later produced and distributed the Avro RJ series. Since it's first flight in 1981 more then 390 have been built and the aircraft still enjoys great popularity due to it's quietness, robustness and versatility. This version for FlightGear is the BAe 146-100 series with Lycoming ALF 502 engines. Have fun!</long-description>
@@ -16,8 +17,10 @@
 
 		<minimum-fg-version>2018.3.0</minimum-fg-version>
 		
+		<!-- experiments with fdms generated with different inputs -->
+		
 		<flight-model>jsb</flight-model>
-		<aero>Systems/BAe-146-100-fdm</aero>
+		<aero>Systems/BAe146-100-fdm</aero><!-- Aeromatic++ -->
 		
 		<model>
 			<path>Aircraft/BAe146-Family/Models/BAe-146-100.xml</path>
@@ -26,6 +29,25 @@
 		<menubar include="gui/menu.xml"/>
 	</sim>
 	
+  <fdm>
+    <jsbsim>
+      <propulsion>
+        <engine n="0">
+          <thrust-coefficient type="double">1.0</thrust-coefficient>
+        </engine>
+        <engine n="1">
+          <thrust-coefficient type="double">1.0</thrust-coefficient>
+        </engine>
+        <engine n="2">
+          <thrust-coefficient type="double">1.0</thrust-coefficient>
+        </engine>
+        <engine n="3">
+          <thrust-coefficient type="double">1.0</thrust-coefficient>
+        </engine>
+      </propulsion>
+    </jsbsim>
+  </fdm>
+
 	<nasal>
 		<bae146>
 			<file>Nasal/BAe146.nas</file>
