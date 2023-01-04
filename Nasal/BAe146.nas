@@ -112,7 +112,7 @@ var eng4norm= func {
 }
 
 var eng1watch= func {
-	var n2=getprop("fdm/jsbsim/propulsion/engine[0]/n2");
+	var n2=getprop("/fdm/jsbsim/propulsion/engine[0]/n2");
 	if (n2<59) {
 		settimer(eng1watch, 5);
 		if (n2<1) {
@@ -126,7 +126,7 @@ var eng1watch= func {
 }
 
 var eng2watch= func {
-	var n2=getprop("fdm/jsbsim/propulsion/engine[1]/n2");
+	var n2=getprop("/fdm/jsbsim/propulsion/engine[1]/n2");
 	if (n2<59) {
 		settimer(eng2watch, 5);
 		if (n2<1) {
@@ -140,7 +140,7 @@ var eng2watch= func {
 }
 
 var eng3watch= func {
-	var n2=getprop("fdm/jsbsim/propulsion/engine[2]/n2");
+	var n2=getprop("/fdm/jsbsim/propulsion/engine[2]/n2");
 	if (n2<59) {
 		settimer(eng3watch, 5);
 		if (n2<1) {
@@ -154,7 +154,7 @@ var eng3watch= func {
 }
 
 var eng4watch= func {
-	var n2=getprop("fdm/jsbsim/propulsion/engine[3]/n2");
+	var n2=getprop("/fdm/jsbsim/propulsion/engine[3]/n2");
 	if (n2<59) {
 		settimer(eng4watch, 5);
 		if (n2<1) {
